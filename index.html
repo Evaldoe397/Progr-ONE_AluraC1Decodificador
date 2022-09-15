@@ -8,45 +8,36 @@
     <link rel="stylesheet"href="style.css">
     <title>Decodificador</title>
 </head>
-
 <body> 
-
     <header>
        <img class="logo" src="Logo_Alura.png" alt="logo da pagina criada no figma">
     </header>
-
-<main class="main">
-<section>
-    <Div>
-        <h6 class="frase-input-texto">Digite seu texto:</h6>
-    </Div>
-    <textarea class="input-texto" cols="30" rows="6"></textarea>
-    <div>
-        <h6 class= "informacao">Apenas letras maiúsculas e minúsculas</h6>
-    </div>
-    <div class="botoes">
-    <button class="encriptar" onclick="btnEncriptar()">
-        Criptografar
-    </button>
-
-    <button class="desencriptar" onclick="btndesencriptar()">
-        Descriptografar
-    </button>
-    
-    </div>
-</section>
-
-<section class="container">
-
-    <textarea type="text" name="mensagem" id="imensagem" class="mensagem" 
-    cols="20"rows="11" placeholder=" "></textarea>
-    
-    <button class="copiar" id="copiarTexto" onclick="copiarTexto()">Copiar</button>
-</section>
-
-</main>
-<script src="script.js"></script>
-<script src="copiar.js"></script>
+    <main class="main">
+        <section>
+            <Div>
+                <h6 class="frase-input-texto">Digite seu texto:</h6>
+            </Div>
+            <textarea class="input-texto" cols="30" rows="6"></textarea>
+            <div>
+                <h6 class= "informacao">Apenas letras maiúsculas e minúsculas</h6>
+            </div>
+            <div class="botoes">
+                <button class="encriptar" onclick="btnEncriptar()">
+                    Criptografar
+                </button>
+                <button class="desencriptar" onclick="btndesencriptar()">
+                    Descriptografar
+                </button>
+            </div>
+        </section>
+        <section class="container">
+            <textarea type="text" name="mensagem" id="imensagem" class="mensagem" 
+            cols="20"rows="11" placeholder=" "></textarea>
+            <button class="copiar" id="copiarTexto" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script src="copiar.js"></script>
 </body> 
 </html>
 
