@@ -16,14 +16,15 @@
     </header>
 
 <main class="main">
-
 <section>
-<Div class="frase-input-texto">Digite seu texto:</Div>
-<textarea class="input-texto" cols="30" rows="6"></textarea>
-<div>
-    <h6 class= "informacao">Apenas letras maiúsculas e minúsculas</h6>
-</div>
-<div class="botoes">
+    <Div>
+        <h6 class="frase-input-texto">Digite seu texto:</h6>
+    </Div>
+    <textarea class="input-texto" cols="30" rows="6"></textarea>
+    <div>
+        <h6 class= "informacao">Apenas letras maiúsculas e minúsculas</h6>
+    </div>
+    <div class="botoes">
     <button class="encriptar" onclick="btnEncriptar()">
         Criptografar
     </button>
@@ -31,15 +32,21 @@
     <button class="desencriptar" onclick="btndesencriptar()">
         Descriptografar
     </button>
+    
     </div>
 </section>
 
-<section>
- <img class="Retangulo" src="Rectangle 1.png" alt="Retangulo da Figura criado no figma"> 
-<textarea class="mensagem" cols="20" rows="8"></textarea>
+<section class="container">
+
+    <textarea type="text" name="mensagem" id="imensagem" class="mensagem" 
+    cols="20"rows="11" placeholder=" "></textarea>
+    
+    <button class="copiar" id="copiarTexto" onclick="copiarTexto()">Copiar</button>
 </section>
 
 </main>
 <script src="script.js"></script>
+<script src="copiar.js"></script>
 </body> 
 </html>
+
