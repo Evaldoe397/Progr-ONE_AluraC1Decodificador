@@ -25,7 +25,7 @@ function btndesencriptar() {
     const textoDesencriptado = desencriptar(inputTexto.value);
     mensagem.value = textoDesencriptado;
     mensagem.style.backgroundImage= "none";
-    document.getElementById('copiarTexto').style.display = 'inline';
+    btnAparecer.classList.remove("textCopy");
 }   
 
 function desencriptar(stringDesencriptada) {
