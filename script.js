@@ -1,11 +1,12 @@
 const inputTexto= document.querySelector(".input-texto");
 const mensagem = document.querySelector(".mensagem");
-const btnAparecer = document.querySelector(".invisivel");
+const btnAparecer = document.querySelector(".textCopy");
 
 function btnEncriptar() {
     const textoEncriptado = encriptar(inputTexto.value);
     mensagem.value = textoEncriptado;
     mensagem.style.backgroundImage= "none";
+    btnAparecer.classList.remove("textCopy");
 }
 
 function encriptar(stringEncriptada) {
@@ -24,6 +25,7 @@ function btndesencriptar() {
     const textoDesencriptado = desencriptar(inputTexto.value);
     mensagem.value = textoDesencriptado;
     mensagem.style.backgroundImage= "none";
+    document.getElementById('copiarTexto').style.display = 'inline';
 }   
 
 function desencriptar(stringDesencriptada) {
@@ -37,15 +39,3 @@ function desencriptar(stringDesencriptada) {
         }
         return stringDesencriptada;
 }
- 
-function copiarTexto() {
-    let textoCopiado = document.querySelector(".mensagem");
-    textoCopiado.select();
-    navigator.clipboard.writeText(textoCopiado.value);
-    textoCopiado.value = inputTexto.value;
-    alert("O texto é: " + textoCopiado.value);
-    inputTexto.value = textoCopiado.value;
-    textoCopiado.value = "";
-    window.location.reload();
-}
-

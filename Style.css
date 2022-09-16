@@ -98,9 +98,8 @@ header{
     width: 10rem;
     height: 14rem;
 }
-.copiar{
+.copiar {
 
-    display:flex;
     width: 130px;
     height: hug(67px);
     margin-top: 420px;
@@ -120,4 +119,6 @@ header{
     color:#ffffff;
     transform: scale(1.15);
 }
-
+.textCopy {
+    display: none   
+}
