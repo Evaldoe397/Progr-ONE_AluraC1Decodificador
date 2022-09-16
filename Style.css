@@ -82,18 +82,19 @@ header{
 .container {
     
     background-color: white;
-    margin: 10px auto;
+    margin: auto;
     border-radius: 30px;
-    padding: 10px;
+    padding: 20px;
     width: 13rem;
     height: 18rem;
 }
 .mensagem {
     position: relative;
+
     margin: 10px auto;
     border: none;
     width: 90%;
-    height: 58%;
+    height: 56%;
     padding: 2px;
     background-image: url("Boneco.png");
     resize: none;
@@ -101,11 +102,11 @@ header{
 }
 .mensagem::placeholder{ 
     position:absolute;
-    text-align:center;
+    left: 40px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
+    font-weight: 600;
+    font-size: 20px;
     color: #343A40;
     Bottom: 0px;
 }
@@ -128,6 +129,7 @@ header{
     align-self: stretch;
     flex-grow: 0;
     display: block;
+    
 }
 .copiar {
     width: 130px;
