@@ -16,7 +16,9 @@ function encriptar(stringEncriptada) {
         for (let i=0; i<matrizCodigo.length; i++) {
             if (stringEncriptada.includes(matrizCodigo[i][0])) {
                 stringEncriptada = stringEncriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
-            }
+            
+                document.querySelector(".sugestao").style.display = "none";
+            }           
         }
         return stringEncriptada;
 }
@@ -35,7 +37,11 @@ function desencriptar(stringDesencriptada) {
         for (let i=0; i<matrizCodigo.length; i++) {
             if (stringDesencriptada.includes(matrizCodigo[i][0])) {
                 stringDesencriptada = stringDesencriptada.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
+                
+                document.querySelector(".sugestao").style.display = "none";
             }
+            
         }
-        return stringDesencriptada;
+    return stringDesencriptada;
+    
 }
