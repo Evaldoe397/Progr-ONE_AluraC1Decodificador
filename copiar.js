@@ -4,7 +4,7 @@ function copiarTexto() {
     textoCopiado.select();
     navigator.clipboard.writeText(textoCopiado.value);
     textoCopiado.value = inputTexto.value;
-    alert("O texto é: " + textoCopiado.value);
+    alert("Texto copiado: " + textoCopiado.value);
     inputTexto.value = textoCopiado.value;
     textoCopiado.value = "";
     window.location.reload();
